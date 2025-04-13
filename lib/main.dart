@@ -3,9 +3,8 @@ import 'package:toku_app/screens/home_page.dart';
 import 'package:toku_app/screens/numbers_page.dart';
 
 void main() {
-  runApp(TokuApp());
+  runApp(const TokuApp());
 }
-
 class TokuApp extends StatelessWidget {
   const TokuApp({super.key});
 
@@ -13,10 +12,10 @@ class TokuApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       routes:{
-        NumbersPage.routeName:(context)=>NumbersPage(),
+        NumbersPage.routeName:(context)=>const NumbersPage(),
       } ,
       debugShowCheckedModeBanner: false,
-      home: HomePage(),
+      home: const HomePage(),
     );
   }
 }
